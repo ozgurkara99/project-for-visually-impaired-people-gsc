@@ -1,4 +1,4 @@
-# project-for-visually-impaired-people-gsc
+# Project For Visually Impaired People GSC
 Google's Solutions Challenge
 ## Models Links
 [Models](https://drive.google.com/open?id=1Q28giepDWvGJzW1IDZaEVDbYSUW-z7Aw)
@@ -33,3 +33,5 @@ Models
 
 ## References
 [Monodepth-2](https://github.com/nianticlabs/monodepth2) 
+[Mannequin Challenge]
+[Tensorflow Object Detection API]
