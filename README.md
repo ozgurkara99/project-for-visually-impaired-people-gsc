@@ -32,6 +32,6 @@ Models
 
 
 ## References
-[Monodepth-2](https://github.com/nianticlabs/monodepth2) 
-[Mannequin Challenge]
-[Tensorflow Object Detection API]
+[Monodepth-2](https://github.com/nianticlabs/monodepth2)   
+[Mannequin Challenge]  
+[Tensorflow Object Detection API]  
