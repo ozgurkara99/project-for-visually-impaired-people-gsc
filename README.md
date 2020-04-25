@@ -35,4 +35,4 @@ Models
 ----mscoco_label_map.pbtxt  
 ----saved_model.pb  
 ## References
-[Monodepth](https://github.com/nianticlabs/monodepth2) 
+[Monodepth-2](https://github.com/nianticlabs/monodepth2) 
