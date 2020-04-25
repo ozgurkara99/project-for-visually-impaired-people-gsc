@@ -1,5 +1,7 @@
 # Project For Visually Impaired People GSC
 Google's Solutions Challenge
+To build our solution, we included Tensorflow Object Detection API and used a depth estimation model based on "monodepth2". Apart from that, we developed our Android application to fetch data from computer and give an audio output to the visually impaired people. To build our solution, we used Flask to set up communication between the app and host. We used Android Studio to design and develop our Android application.
+
 ## Models Links
 [Models](https://drive.google.com/open?id=1Q28giepDWvGJzW1IDZaEVDbYSUW-z7Aw)
 ## Hierarchy
