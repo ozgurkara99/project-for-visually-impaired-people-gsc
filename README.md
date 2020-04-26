@@ -15,7 +15,7 @@ Google's Solutions Challenge
 2- Download models which are given above and add this folder to the same directory with main.py .
 
 3- Download the dependencies.  
-`pip install numpy opencv-python tensorflow pillow matplotlib torch torchvision tensorflow-object-detection-api`
+`pip install numpy opencv-python tensorflow pillow==6.1 imutils matplotlib pytorch=0.4.1 torchvision=0.2.1 tensorflow-object-detection-api`  
 
 4- To run program write this command:  
 `python main.py ip_adress_of_camera_source`
