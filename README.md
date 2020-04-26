@@ -1,4 +1,6 @@
-# A Torch in Darkness
+# A Torch in Darkness <img src="https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/torch.png" width="50" />
+
+
 Project For Visually Impaired People GSC
 
 Google's Solutions Challenge
@@ -49,3 +51,5 @@ ip_adress_of_camera_source is the IP Webcam server's ip adress that is written i
 [Monodepth-2](https://github.com/nianticlabs/monodepth2)   
 [Mannequin Challenge](https://github.com/google/mannequinchallenge)  
 [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
+
+Torch icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
