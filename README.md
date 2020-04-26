@@ -21,7 +21,7 @@ Google's Solutions Challenge
 `python main.py ip_adress_of_camera_source`
 ip_adress_of_camera_source is the IP Webcam server's ip adress that is written in the program and in this form: http://192.168.xxxxx:xxxx
 
-5- Install [IPCam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=tr) app from Google Play Store on your Android Device 
+5- Install [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=tr) app from Google Play Store on your Android Device 
 
 6- Download .apk file from [here](https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/android_app/app/release/app-release.apk)
 
@@ -29,7 +29,7 @@ ip_adress_of_camera_source is the IP Webcam server's ip adress that is written i
 
 8- Connect your Android device to the same network with your computer.
 
-9- Run IPCam and click start server at the end of the application page.
+9- Run IP Webcam and click start server at the end of the application page.
 
 10- Run flask_web.py:
 `python flask_web.py`
