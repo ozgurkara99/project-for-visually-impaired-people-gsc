@@ -1,4 +1,6 @@
-# A Torch in Darkness
+# A Torch in Darkness <img src="https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/torch.png" width="50" />
+
+
 Project For Visually Impaired People GSC
 
 Google's Solutions Challenge
