@@ -4,35 +4,10 @@ To build our solution, we included Tensorflow Object Detection API and used a de
 
 ## Models Links
 [Models](https://drive.google.com/open?id=1Q28giepDWvGJzW1IDZaEVDbYSUW-z7Aw)
-## Hierarchy
-main.py  
-layers.py  
-flask_web.py  
-templates  
--home.html  
-networks  
--__init__.py  
--depth_decoder.py  
--pose_cnn.py  
--pose_decoder.py  
--resnet_encoder.py   
-output  
--output.txt    
-Models  
--Depth-Estimation-Models  
---mono+stereo_1024x320  
----depth.pth  
----encoder.pth  
----pose.pth  
----pose_encoder.pth    
--Object-Detection-Models  
---ssdlite_mobilenet_v2_coco_2018_05_09  
----saved_model  
-----mscoco_label_map.pbtxt  
-----saved_model.pb  
+
 ## Installation
 1- Download the repo to your server.  
-2- Download models which are given above.  
+2- Download models which are given above and add this folder to the same directory with main.py .  
 3- Download the dependencies  
 `pip install numpy opencv-python tensorflow pillow matplotlib torch torchvision tensorflow-object-detection-api`  
 4- To run program write this command:  
