@@ -37,9 +37,9 @@ Models
 `pip install numpy opencv-python tensorflow pillow matplotlib torch torchvision tensorflow-object-detection-api`
 4- To run program write this command:  
 `python main.py ip_adress_of_camera_source` 
-ip_adress_of_camera_source is the IP Webcam server's ip adress that is written in the program and in this form: http://192.168.xxxxx:xxxx 
+ip_adress_of_camera_source is the IP Webcam server's ip adress that is written in the program and in this form: http://192.168.xxxxx:xxxx   
 5- Deniz burayı yaz
 ## References
 [Monodepth-2](https://github.com/nianticlabs/monodepth2)   
-[Mannequin Challenge](https://github.com/google/mannequinchallenge)
+[Mannequin Challenge](https://github.com/google/mannequinchallenge)  
 [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
