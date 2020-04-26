@@ -19,7 +19,7 @@ Google's Solutions Challenge
 `python main.py ip_adress_of_camera_source`
 ip_adress_of_camera_source is the IP Webcam server's ip adress that is written in the program and in this form: http://192.168.xxxxx:xxxx
 
-5- Install IPCam app from Google Play Store on your Android Device [link](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=tr)
+5- Install [IPCam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=tr) app from Google Play Store on your Android Device 
 
 6- Download .apk file from [here](link)
 
