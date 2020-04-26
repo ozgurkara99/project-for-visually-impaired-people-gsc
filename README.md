@@ -31,7 +31,7 @@ ip_adress_of_camera_source is the IP Webcam server's ip adress that is written i
 
 9- Run IPCam and click start server at the end of the application page.
 
-10- Run flask_web.py .
+10- Run flask_web.py:
 `python flask_web.py`
 
 11- Get local IP from your computer and try to reach same content from your Android device
