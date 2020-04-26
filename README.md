@@ -23,7 +23,7 @@ ip_adress_of_camera_source is the IP Webcam server's ip adress that is written i
 
 5- Install [IPCam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=tr) app from Google Play Store on your Android Device 
 
-6- Download .apk file from [here](link)
+6- Download .apk file from [here](https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/android_app/app/release/app-release.apk)
 
 7- Install the app on your Android device.
 
