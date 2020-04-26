@@ -34,7 +34,7 @@ Models
 1- Download the repo to your server.  
 2- Download models which are given above.  
 3- Download the dependencies  
-`pip install numpy opencv-python tensorflow pillow matplotlib torch torchvision tensorflow-object-detection-api`
+`pip install numpy opencv-python tensorflow pillow matplotlib torch torchvision tensorflow-object-detection-api`  
 4- To run program write this command:  
 `python main.py ip_adress_of_camera_source` 
 ip_adress_of_camera_source is the IP Webcam server's ip adress that is written in the program and in this form: http://192.168.xxxxx:xxxx   
