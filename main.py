@@ -10,10 +10,14 @@ import matplotlib as mpl
 import matplotlib.cm as cm
 import torch
 import torchvision
+import sys
 
 tf.gfile = tf.io.gfile
-
-camera_source = 0 #"http://192.168.2.104:8080/video"
+camera_source = 0
+if(str(sys.argv[1]) == "0"):
+    camera_source = 0
+else:
+    camera_source = str(sys.argv[1]) + "/video"
 default_conf = 0.35
 COLORS = np.random.uniform(0, 255, size=(100, 3))
 
@@ -120,6 +124,7 @@ def select_device():
         return torch.device("cpu")
 
 device = select_device()
+#device = torch.device("cpu")
 # LOADING PRETRAINED MODEL
 print("Loading detection model")
 detection_model = load_object_detection_model(object_detection_model_path)
@@ -129,34 +134,33 @@ print("Loading pretrained decoder")
 depth_decoder = load_decoder(encoder, depth_estimation_decoder_path)
 
 with torch.no_grad():
-    try:
-        vs = VideoStream(camera_source).start()
-        while True:
-            flag, left = 1, 1
-            averages = []
-            frame = vs.read()
-            w, h, colormapped_im = depth_predict(frame, encoder, depth_decoder, device) #depth prediction result  
-            conf, classes, boxes = run_object_detection_for_single_image(detection_model, frame) #object detection result
-            
-            for i,confidence in enumerate(conf):
-                if confidence > default_conf:
-                    (startY, startX, endY, endX) = boxes[i]
-                    startX, endX, startY, endY = int(startX * w), int(endX * w), int(startY * h), int(endY * h)
-                    label = "{}: {:.2f}%".format(category_index.get(classes[i]).get('name'),confidence * 100)
-                    objectarea = colormapped_im[startY:endY,startX:endX]
-                    
-                    right, left = create_multipliers(w, h, (startY + endY) /2)
-                    list_for_one = [np.mean(objectarea), right, left, category_index.get(classes[i]).get('name')]
-                    averages.append(list_for_one)   
-                    
-                    cv2.rectangle(colormapped_im, (startX, startY), (endX, endY),COLORS[i], 2)
-                    cv2.putText(colormapped_im, label, (startX, (startY - 15 if startY - 15 > 15 else startY + 15)),cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[i], 2)
-    
-            #cv2.imshow("Input", frame)
-            cv2.imshow("Output", colormapped_im)
-            write_to_txt(averages, output_filename)
-            key = cv2.waitKey(1) & 0xFF
-            if key == ord("q"):
-                break
-    except:
-        print("No camera")
+    vs = VideoStream(camera_source).start()
+    while True:
+        flag, left = 1, 1
+        averages = []
+        frame = vs.read()
+        w, h, colormapped_im = depth_predict(frame, encoder, depth_decoder, device) #depth prediction result  
+        conf, classes, boxes = run_object_detection_for_single_image(detection_model, frame) #object detection result
+        
+        for i,confidence in enumerate(conf):
+            if confidence > default_conf:
+                (startY, startX, endY, endX) = boxes[i]
+                startX, endX, startY, endY = int(startX * w), int(endX * w), int(startY * h), int(endY * h)
+                label = "{}: {:.2f}%".format(category_index.get(classes[i]).get('name'),confidence * 100)
+                objectarea = colormapped_im[startY:endY,startX:endX]
+                
+                right, left = create_multipliers(w, h, (startY + endY) /2)
+                list_for_one = [np.mean(objectarea), right, left, category_index.get(classes[i]).get('name')]
+                averages.append(list_for_one)
+                
+                cv2.rectangle(frame, (startX, startY), (endX, endY),COLORS[i], 2)
+                cv2.putText(frame, label, (startX, (startY - 15 if startY - 15 > 15 else startY + 15)),cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[i], 2)
+                cv2.rectangle(colormapped_im, (startX, startY), (endX, endY),COLORS[i], 2)
+                cv2.putText(colormapped_im, label, (startX, (startY - 15 if startY - 15 > 15 else startY + 15)),cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[i], 2)
+
+        cv2.imshow("Input", frame)
+        cv2.imshow("Output", colormapped_im)
+        write_to_txt(averages, output_filename)
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord("q"):
+            break
