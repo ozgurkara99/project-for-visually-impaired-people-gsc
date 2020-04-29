@@ -8,10 +8,10 @@ For video:
 " target="_blank"><img src="http://img.youtube.com/vi/tk5gTQsqOwM/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-Project For Visually Impaired People GSC
+Project For Visually Impaired People Google's Solution Challenge
 
-Google's Solutions Challenge
-- To build our solution, we included Tensorflow Object Detection API and used a depth estimation model based on "monodepth2". Apart from that, we developed our Android application to fetch data from computer and give an audio output to the visually impaired people. To build our solution, we used Flask to set up communication between the app and host. We used Android Studio to design and develop our Android application.
+## Summary
+Visually impaired people face many problems in their daily lives. The most important of these problems is that they do not notice the objects on their routes while moving. An integrated system with a camera and sounder is designed to solve this problem. This system can detect the surrounding objects with image processing technology and depth estimation algorithms, and generate alerts (sound) that can direct visually impaired individuals to the side where the object is absent.
 
 ## Models Links
 [Models](https://drive.google.com/open?id=1Q28giepDWvGJzW1IDZaEVDbYSUW-z7Aw)
