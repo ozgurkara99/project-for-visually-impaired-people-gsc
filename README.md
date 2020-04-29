@@ -1,4 +1,6 @@
-# A Torch in Darkness <img src="https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/torch.png" width="50" />
+<img align="left" width="90" height="80" src="https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/torch.png" alt="A Torch in Darkness project app icon">
+
+# A Torch in Darkness
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=tk5gTQsqOwM
 " target="_blank"><img src="http://img.youtube.com/vi/tk5gTQsqOwM/0.jpg" 
