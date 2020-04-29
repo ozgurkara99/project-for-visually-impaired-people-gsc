@@ -1,6 +1,8 @@
 # A Torch in Darkness <img src="https://github.com/ozgurkara99/project-for-visually-impaired-people-gsc/blob/master/torch.png" width="50" />
 
-[Video](https://www.youtube.com/watch?v=tk5gTQsqOwM)  
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=tk5gTQsqOwM
+" target="_blank"><img src="http://img.youtube.com/vi/tk5gTQsqOwM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Project For Visually Impaired People GSC
 
